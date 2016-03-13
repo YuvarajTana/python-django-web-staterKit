@@ -1,2 +1,3 @@
 # python-django-web-staterKit
-Basic python-django project with sample application
+
+Python django web starter kit with sample application
