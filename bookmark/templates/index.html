@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<title>Sample TODO Application</title>
 
+	<!-- Adding external CSS styles  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<style>
 		/* CSS resets */
@@ -16,23 +18,29 @@
 		.container{
 			margin: 0px 20%;
 		}
-
 	</style>
+	
+	<!-- Adding external JavaScript links -->
+
 
 </head>
 <body>
+	<div class="conatiner">
+		<input type="text" placeholder="Add tag | search tag">
 
-	<input type="text" placeholder="Add tag | search tag">
-
-	<button>Add</button>
-	<button>Search</button>
-	
-	<br>
-	<textarea name="" id="" cols="30" rows="10"></textarea>
-	
-	<div>
-		Search results comes here
+		<button class="btn btn-primary">Add</button>
+		<button class="btn btn-primary">Search</button>
+		
+		<div class="conatiner" id="tags-list">
+			Tags list
+		</div>
+		
+		<div class="conatiner" id="search-result">
+			Search results comes here
+		</div>
+		
 	</div>
+	
 
 </body>
 </html>
