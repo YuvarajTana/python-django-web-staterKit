@@ -1,0 +1,6 @@
+Django==1.8
+simplejson==3.3.2
+requests==2.2.1
+pymongo==2.6.3
+mongoengine==0.8.6
+django-mongodb-engine==0.6.0
