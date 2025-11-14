@@ -1,12 +1,10 @@
-from bookmark import settings
-import requests
-from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
-from django.views.decorators.http import require_http_methods, require_POST, require_GET
-from django.http import HttpResponse, HttpResponseNotFound, HttpResponseBadRequest, HttpResponseServerError
-
 from django.shortcuts import render
+from django.http import HttpResponse
 
-@csrf_exempt
+
 def index(request):
-	response = render(request,'index.html')
-	return response
+    """
+    Main index view for the bookmark application.
+    Renders the home page with the TODO interface.
+    """
+    return render(request, 'index.html')
